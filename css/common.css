@@ -1,0 +1,32 @@
+.index{
+
+}
+.index .carousel{
+	margin-bottom: 30px;
+}
+.index .carousel-inner img{
+	width: 100%;
+}
+
+/*login start*/
+.login{
+	height: 100%;
+}
+.login .form-signin,.register .form-signin{
+  margin: 0 auto;
+	max-width: 330px;
+  padding: 15px;
+} 
+
+.login .site-wrapper, .register .form-signin {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+ /* -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+.login .site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
