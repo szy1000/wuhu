@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/swiper-3.4.2.min.css">
 </head>
 <body class="product">
 	<nav class="navbar-default">
@@ -59,9 +60,104 @@
 	</nav>
 
 	<div class="container">
-		<h1>prodcuct</h1>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+								<img src="images/s1.jpg" alt="">
+			        </div>
+			        <div class="swiper-slide">
+								<img src="images/s2.jpg" alt="">
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12">
+				<div class="panel">
+					<div class="panel-heading">
+						<h4>红米Note 4X</h4>
+						<p><span class="brand">【最高享12期小米分期免息】多彩金属</span> / 4100mAh 超长续航 / 5.5"全高清屏</p>
+						<h4 class="brand"><span>1299</span>元</h4>
+						<form action="shopcart.html">
+							<div class="form-wrapper clearfix" data-toggle="distpicker"><!-- container -->
+							  <select class="col-sm-12 col-lg-3 form-control"></select><!-- 省 -->
+							  <select class="col-sm-12 col-lg-3 form-control"></select><!-- 市 -->
+							  <select class="col-sm-12 col-lg-3 form-control"></select><!-- 区 -->
+
+							  <textarea name="" rows="3" cols="54" class="col-lg-12 form-control" placeholder="请输入详细地址"></textarea>
+							</div> 
+							<div>
+								<h4>选择版本 <span class="small">Helio X20 十核旗舰处理器，双卡双待</span></h4>
+								<div class="btn btn-sm btn-default btn-danger">3GB内存+32GB容量 </div>
+								<div class="btn btn-sm btn-default">4GB内存+64GB容量 </div>
+							</div>
+							<div>
+								<h4>选择颜色</h4>
+								<div class="btn btn-sm btn-primary">金色</div>
+								<div class="btn btn-sm btn-warning">黄色</div>
+							</div>
+							<h3>总价格<span class="brand">1299</span></h3>
+							<!-- <a href="shopcart.html" type="submit" role="button" class="btn btn-success">结算</a> -->
+							<button class="btn btn-success" type="submit">去结算</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3>包装清单</h3>
+			</div>
+			<div class="panel-body">
+				<img src="images/list.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3>售后服务</h3>
+			</div>
+			<div class="panel-body">
+				<img src="images/server.png" alt="">
+			</div>
+		</div>
 	</div>
+
+	<hr class="featurette-divider">
+	<footer>
+		<div class="container">
+    	<p class="pull-right"><a href="#">Back to top</a></p>
+	    <p>© 2016 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+		</div>
+  </footer>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/distpicker.data.js"></script>
+	<script src="js/distpicker.js"></script>
+	<script src="js/swiper-3.4.2.min.js"></script>
+	<script>
+		$('#target').distpicker();
+
+		var mySwiper = new Swiper ('.swiper-container', {
+	    // direction: 'vertical',
+	    loop: true,
+	    
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	    
+	    // 如果需要前进后退按钮
+	    nextButton: '.swiper-button-next',
+	    prevButton: '.swiper-button-prev',
+	    
+	  })  
+	</script>
 </body>
 </html>

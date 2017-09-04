@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body class="index">
+	<nav class="navbar-inverse">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="index.html">
+	      	<img src="images/logo.jpg" alt="Brand" style="height: 18px">
+	      </a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#">Link</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">One more separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="login.html">登录</a></li>
+	        <li><a href="register.html">注册</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人中心<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">Action</a></li>
+	            <li><a href="#">Another action</a></li>
+	            <li><a href="#">Something else here</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">Separated link</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="panel">
+			<div class="panel-heading">
+				<h4>我的购物车</h4>
+			</div>
+			<div class="panel-body">
+				
+				<!-- <form class="form-inline"> -->
+				  <table class="table table-striped table-hover">
+				  	<thead>
+					  	<tr>
+					  		<th>
+				  				<label for="all">全选</label>
+					  			<input type="checkbox" id="all">
+					  		</th>
+					  		<th>商品名称</th>
+					  		<th>单价</th>
+					  		<th>数量</th>
+					  		<th>小计</th>
+					  		<th>操作</th>
+					  	</tr>
+				  	</thead>
+				  	<tbody>
+				  		<tr>
+				  			<td><input type="checkbox"></td>
+				  			<td>红米Note 4X 全网通版 香槟金 32GB</td>
+				  			<td><span>999</span>元</td>
+				  			<td><input type="number" value="1"></td>
+				  			<td><span>999</span>元</td>
+				  			<td><span class="glyphicon glyphicon-remove"></span></td>
+				  		</tr>
+				  		<tr>
+				  			<td><input type="checkbox"></td>
+				  			<td>红米Note 4X 全网通版 香槟金 32GB</td>
+				  			<td><span>999</span>元</td>
+				  			<td><input type="number" value="1"></td>
+				  			<td><span>999</span>元</td>
+				  			<td><span class="glyphicon glyphicon-remove"></span></td>
+				  		</tr>
+				  		<tr>
+				  			<td><input type="checkbox"></td>
+				  			<td>红米Note 4X 全网通版 香槟金 32GB</td>
+				  			<td><span>999</span>元</td>
+				  			<td><input type="number" value="1"></td>
+				  			<td><span>999</span>元</td>
+				  			<td><span class="glyphicon glyphicon-remove"></span></td>
+				  		</tr>
+				  		<tr>
+				  			<td colspan="6">
+				  				<p class="text-right"><a href="###" class="btn btn-success">立即结算</a></p>
+				  			</td>
+			  			</tr>
+						</tbody>				  		
+					</table>
+				<!-- </form> -->
+			</div>
+		</div>
+	</div>
+
+	<hr class="featurette-divider">
+	<footer>
+		<div class="container">
+    	<p class="pull-right"><a href="#">Back to top</a></p>
+	    <p>© 2016 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+		</div>
+  </footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

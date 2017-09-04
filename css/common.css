@@ -1,9 +1,19 @@
+.brand{
+  color: #ff4a00;
+}
 .index{
 
 }
+
+
 .index .carousel{
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 }
+
+.index .panel-heading{
+	padding-bottom: 0;
+}
+
 .index .carousel-inner img{
 	width: 100%;
 }
@@ -30,3 +40,20 @@
   display: table-cell;
   vertical-align: top;
 }
+
+/*product*/
+.product{
+
+}
+.product .form-wrapper{
+  width: 100%;
+}
+
+.product select{
+  margin-bottom: 5px;
+}
+
+.product .panel-body img{
+  width: 100%;
+}
+
