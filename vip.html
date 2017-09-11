@@ -54,11 +54,134 @@
 	  </div>
 	</nav>
 
-
 	<div class="container">
 		<h1>个人中心</h1>
 	</div>
 
+<div class="container">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">个人信息</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">账号安全</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+	    <div class="pull-left tx">
+			<img src="images/avatar.png" alt="" class="img-circle"><br><br>
+			<button type="button" class="btn btn-warning">上传图片</button>
+	    </div>
+		<div class="pull-left mess">
+			<table class="table">
+				<tr>
+					<td colspan="2"><h4><b>基础资料</b></h4></td>
+				</tr>
+				<tr>
+					<td>姓名：</td>
+					<td><input type="text" name="username" placeholder="请输入姓名"></td>
+				</tr>
+				<tr>
+					<td>生日：</td>
+					<td>
+						<select class=" sel_year" rel="2017"> </select> 年 
+						<select class=" sel_month" rel="1"> </select> 月 
+						<select class=" sel_day" rel="1"> </select> 日 
+					</td>
+				</tr>
+				<tr>
+					<td>性别：</td>
+					<td>
+						<input type="radio" name="sex" id="man" checked><label for="man">男</label>
+						<input type="radio" name="sex" id="woman"><label for="woman">女</label>
+					</td>
+				</tr>
+				<tr>
+					<td>出生地：</td>
+					<td>
+						<div class="form-wrapper clearfix" data-toggle="distpicker"><!-- container -->
+							  <select class="form-control col-sm-12 col-lg-3"></select><!-- 省 -->
+							  <select class="form-control col-sm-12 col-lg-3"></select><!-- 市 -->
+							  <select class="form-control col-sm-12 col-lg-3"></select><!-- 区 -->
+						</div> 
+					</td>
+				</tr>
+				<tr>
+					<td>居住地：</td>
+					<td>
+						<div class="form-wrapper clearfix" data-toggle="distpicker"><!-- container -->
+							  <select class="form-control col-sm-12 col-lg-3"></select><!-- 省 -->
+							  <select class="form-control col-sm-12 col-lg-3"></select><!-- 市 -->
+							  <select class="form-control col-sm-12 col-lg-3"></select><!-- 区 -->
+						</div> 
+					</td>
+				</tr>
+				<tr>
+					<td>个人简介：</td>
+					<td>
+						<textarea name="" rows="6" cols="20" class="col-lg-12 form-control"></textarea>
+					</td>
+				</tr>
+			</table>
+		</div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+		<div class="pull-left mess">
+			<div>
+				<h4><b>安全等级</b></h4>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+				    <span class="sr-only">40% Complete (danger)</span>
+				  </div><span class="red">40</span>
+				</div>
+			</div>
+			<div>
+				<div class="pull-left key" ><span class="glyphicon glyphicon-lock keyfloat" aria-hidden="true"></span></div>
+				<div class="pull-left">
+					<h4>帐号密码</h4>
+					<h6>用于保护帐号信息和登录安全</h6>
+				</div>
+			</div>
+			<div class="clear">
+				<div class="pull-left key" ><span class="glyphicon glyphicon-envelope keyfloat" aria-hidden="true"></span></div>
+				<div class="pull-left">
+					<h4>安全邮箱</h4>
+					<h6>安全邮箱将可用于登录小米帐号和重置密码，建议立即设置</h6>
+				</div>
+			</div>
+			<div class="clear">
+				<div class="pull-left key" ><span class="glyphicon glyphicon-earphone keyfloat" aria-hidden="true"></span></div>
+				<div class="pull-left">
+					<h4>安全手机</h4>
+					<h6>安全手机可以用于登录小米帐号，重置密码或其他安全验证</h6>
+				</div>
+			</div>
+			<div class="clear">
+				<div class="pull-left key" ><span class="glyphicon glyphicon-collapse-down keyfloat" aria-hidden="true"></span></div>
+				<div class="pull-left">
+					<h4>密保问题</h4>
+					<h6>密保问题用于安全验证，建议立即设置</h6>
+				</div>
+			</div>
+		</div>
+		<div class="pull-left mess">
+			<div>
+				<h4><b>推荐使用</b></h4>
+			</div>
+			<div class="clear">
+				<div class="pull-left key" ><span class="glyphicon glyphicon-cloud keyfloat" aria-hidden="true"></span></div>
+				<div class="pull-left">
+					<h4>小米安全令牌</h4>
+					<h6>在非信任设备上登录需要二次验证，防止他人恶意登录</h6>
+				</div>
+			</div>
+		</div>
+    </div>
+  </div>
+
+</div>
+	
 	<hr class="featurette-divider">
 	<footer>
 		<div class="container">
@@ -66,8 +189,12 @@
 	    <p>© 2016 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
 		</div>
   </footer>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/birthday.js"></script> 
+<script src="js/distpicker.data.js"></script>
+<script src="js/distpicker.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
 	<script>
 		$(document).ready(function () {
 			$.ajax({
@@ -77,7 +204,18 @@
 					console.log(data.name)
 				}
 			})
+		});
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
 		})
+		$(function () { 
+	    $.ms_DatePicker({ 
+	            YearSelector: ".sel_year", 
+	            MonthSelector: ".sel_month", 
+	            DaySelector: ".sel_day" 
+	    }); 
+	}); 
 	</script>
 </body>
 </html>
