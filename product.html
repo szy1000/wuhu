@@ -122,8 +122,13 @@
 									}
 								</style>
 								<div class="color">
-									<label class="btn btn-sm btn-primary">金色</label>
-									<label class="btn btn-sm btn-warning">黄色</label>
+									<label class="btn btn-sm btn-primary">
+										<input required type="radio" name="color" value="gold" style="display: none">金色
+									</label>
+
+									<label class="btn btn-sm btn-warning">
+										<input type="radio" name="color"  value="yellow" style="display: none">黄色
+									</label>
 								</div>
 							</div>
 							<h3>总价格<span class="brand">1299</span></h3>
@@ -168,18 +173,14 @@
 	<script src="js/swiper-3.4.2.min.js"></script>
 	<script>
 		$('#target').distpicker();
-
 		var mySwiper = new Swiper ('.swiper-container', {
 	    // direction: 'vertical',
 	    loop: true,
-	    
 	    // 如果需要分页器
 	    pagination: '.swiper-pagination',
-	    
 	    // 如果需要前进后退按钮
 	    nextButton: '.swiper-button-next',
 	    prevButton: '.swiper-button-prev',
-	    
 	  })  
 	  $('.type label').click(function () {
 	  	$(this).addClass('btn-danger').siblings().removeClass('btn-danger');
@@ -188,7 +189,6 @@
 	  $('.color label').click(function () {
 	  	$(this).addClass('on').siblings().removeClass('on');
 	  })
-	  
 	</script>
 </body>
 </html>
